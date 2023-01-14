@@ -1,15 +1,19 @@
 number_of_guests = int(input())
-guests = set()
+reservation = set()
+party = set()
 
 for _ in range(number_of_guests):
     reservation_code = input()
-    guests.add(reservation_code)
+    reservation.add(reservation_code)
 
-invite = input()
-while invite != 'END':
+guest = input()
 
-    if invite in guests:
-        guests.remove(invite)
-    invite = input()
-print(len(guests))
-print("\n".join(sorted(guests)))
+while guest != 'END':
+    party.add(guest)
+    guest = input()
+
+missing_people = reservation.difference(party)
+print(len(missing_people))
+
+for person in sorted(missing_people):
+    print(person)
