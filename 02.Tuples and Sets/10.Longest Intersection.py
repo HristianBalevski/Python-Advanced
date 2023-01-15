@@ -1,38 +1,29 @@
-number_of_lines = int(input())
-
-first_intersection = []
-second_intersection = []
-current_intersection = []
+number_of_iteration = int(input())
+first_set = set()
+second_set = set()
 longest_intersection = []
-counter = 0
 
-for _ in range(number_of_lines):
+for _ in range(number_of_iteration):
     data = input().split('-')
+    first_start, first_end = data[0].split(',')
+    second_start, second_end = data[1].split(',')
 
-    for info in data:
-        current_info = info.split(',')
-        start = int(current_info[0])
-        end = int(current_info[1])
+    first_start = int(first_start)
+    first_end = int(first_end)
+    second_start = int(second_start)
+    second_end = int(second_end)
 
-        if counter == 0:
-            for i in range(start, end + 1):
-                first_intersection.append(i)
-            counter += 1
-        else:
-            for i in range(start, end + 1):
-                second_intersection.append(i)
+    for i in range(first_start, first_end + 1):
+        first_set.add(i)
 
-    for num in first_intersection:
-        if num in second_intersection:
-            current_intersection.append(num)
+    for j in range(second_start, second_end + 1):
+        second_set.add(j)
 
-    if len(longest_intersection) == 0:
-        longest_intersection = current_intersection.copy()
-    else:
-        if len(longest_intersection) < len(current_intersection):
-            longest_intersection = current_intersection.copy()
-    first_intersection.clear()
-    second_intersection.clear()
-    current_intersection.clear()
-    counter = 0
-print(f"Longest intersection is {longest_intersection} with length {len(longest_intersection)}")
+    result = first_set.intersection(second_set)
+
+    if len(result) > len(longest_intersection):
+        longest_intersection = result
+    first_set = set()
+    second_set = set()
+
+print(f"Longest intersection is {[num for num in longest_intersection]} with length {len(longest_intersection)}")
