@@ -1,26 +1,17 @@
-from collections import deque
-
-
 def fill_the_box(height, length, width, *args):
-    size = height * length * width
-    numbers = deque()
-    for element in args:
-        if element == 'Finish':
-            break
-        numbers.appendleft(int(element))
+    size_of_the_box = height * length * width
 
-    while len(numbers) > 0:
-        if size == 0:
+    for num in args:
+        if num == 'Finish':
             break
-        num = numbers.popleft()
-
-        if num <= size:
-            size -= num
         else:
-            num = num - size
-            numbers.append(num)
-            size = 0
-    if size > 0:
-        return f"There is free space in the box. You could put {size} more cubes."
+            size_of_the_box -= num
+    if size_of_the_box > 0:
+        return f"There is free space in the box. You could put {size_of_the_box} more cubes."
     else:
-        return f"No more free space! You have {sum(numbers)} more cubes."
+        return f"No more free space! You have {abs(size_of_the_box)} more cubes."
+
+
+print(fill_the_box(2, 8, 2, 2, 1, 7, 3, 1, 5, "Finish"))
+print(fill_the_box(5, 5, 2, 40, 11, 7, 3, 1, 5, "Finish"))
+print(fill_the_box(10, 10, 10, 40, "Finish", 2, 15, 30))
