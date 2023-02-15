@@ -1,3 +1,4 @@
 Pythond Advanced Exam - 27 June 2020 --> https://judge.softuni.org/Contests/Practice/Index/2456#2
 Python Advanced Retake Exam - 19 August 2020 --> https://judge.softuni.org/Contests/Practice/Index/2463#0
 Python Advanced Exam - 24 October 2020 --> https://judge.softuni.org/Contests/Practice/Index/2551#0
+Python Advanced Retake Exam - 16 December 2020 --> https://judge.softuni.org/Contests/Practice/Index/2720#0
