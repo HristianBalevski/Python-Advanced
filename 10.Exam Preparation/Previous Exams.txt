@@ -5,5 +5,5 @@ Python Advanced Retake Exam - 16 December 2020 --> https://judge.softuni.org/Con
 Python Advanced Exam - 14 February 2021 --> https://judge.softuni.org/Contests/Practice/Index/2812#0
 Python Advanced Retake Exam - 14 April 2021 --> https://judge.softuni.org/Contests/Practice/Index/2828#0
 Python Advanced Exam - 23 October 2021 --> https://judge.softuni.org/Contests/Practice/Index/3227#2
-To Do
+Python Advanced Retake Exam - 15 December 2021 --> https://judge.softuni.org/Contests/Practice/Index/3306#0
 Python Advanced Exam - 19 February 2022 --> https://judge.softuni.org/Contests/Practice/Index/3374#0
