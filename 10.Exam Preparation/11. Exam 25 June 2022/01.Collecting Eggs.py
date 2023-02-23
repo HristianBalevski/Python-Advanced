@@ -1,15 +1,15 @@
 from collections import deque
 
-sizes_of_egs = deque([int(num) for num in input().split(", ")])
+sizes_of_eggs = deque([int(num) for num in input().split(", ")])
 sizes_of_paper = [int(num) for num in input().split(", ")]
 
 filled_boxes = 0
 
 while True:
-    if len(sizes_of_paper) == 0 or len(sizes_of_egs) == 0:
+    if len(sizes_of_paper) == 0 or len(sizes_of_eggs) == 0:
         break
 
-    egg = sizes_of_egs.popleft()
+    egg = sizes_of_eggs.popleft()
 
     if egg <= 0:
         continue
@@ -29,7 +29,7 @@ if filled_boxes > 0:
 else:
     print("Sorry! You couldn't fill any boxes!")
 
-if sizes_of_egs:
-    print(f'Eggs left: {", ".join([str(x) for x in sizes_of_egs])}')
+if sizes_of_eggs:
+    print(f'Eggs left: {", ".join([str(x) for x in sizes_of_eggs])}')
 if sizes_of_paper:
     print(f'Pieces of paper left: {", ".join([str(x) for x in sizes_of_paper])}')
