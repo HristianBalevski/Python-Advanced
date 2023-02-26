@@ -11,3 +11,4 @@ Python Advanced Retake Exam - 14 April 2022 --> https://judge.softuni.org/Contes
 Python Advanced Exam - 25 June 2022 --> https://judge.softuni.org/Contests/Practice/Index/3515#0
 Python Advanced Retake Exam - 18 August 2022 --> https://judge.softuni.org/Contests/Practice/Index/3534#0
 Python Advanced Exam - 22 October 2022 --> https://judge.softuni.org/Contests/Practice/Index/3596#0
+Python Advanced Retake Exam - 14 December 2022 --> https://judge.softuni.org/Contests/Practice/Index/3744#0
